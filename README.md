@@ -22,13 +22,13 @@
 <p><strong>Mostrar memória RAM livre</strong>: ✔️</p>
 <p><strong>Mostrar velocidade de download</strong>: ✔️</p>
 <p><strong>Mostrar velocidade de upload</strong>: ✔️</p>
-<p><strong>Mostrar nome da máquina</strong>: Pendente</p>
-<p><strong>Mostrar endereço físico</strong>: Pendente</p>
-<p><strong>Mostrar RAM instalada</strong>: Pendente</p>
-<p><strong>Mostrar espaço livre no disco</strong>: Pendente</p>
-<p><strong>Mostrar se tem webcam</strong>: Pendente</p>
-<p><strong>Mostrar se tem placa de som</strong>: Pendente</p>
-<p><strong>Criar form para mandar os dados da pessoa e salvar no BD</strong>: Pendente</p>
+<p><strong>Mostrar nome da máquina</strong>: <span style="color: red">Pendente</span></p>
+<p><strong>Mostrar endereço físico</strong>: <span style="color: red">Pendente</span></p>
+<p><strong>Mostrar RAM instalada</strong>: <span style="color: red">Pendente</span></p>
+<p><strong>Mostrar espaço livre no disco</strong>: <span style="color: red">Pendente</span></p>
+<p><strong>Mostrar se tem webcam</strong>: <span style="color: red">Pendente</span></p>
+<p><strong>Mostrar se tem placa de som</strong>: <span style="color: red">Pendente</span></p>
+<p><strong>Criar form para mandar os dados da pessoa e salvar no BD</strong>: <span style="color: red">Pendente</span></p>
 
 ### Desenvolvido por Daniel Rossi de Amorim &copy;
 
