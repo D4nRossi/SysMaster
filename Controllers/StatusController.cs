@@ -65,6 +65,9 @@ namespace SysMaster.Controllers {
                 }
             }
 
+            //Nome da máquina
+            string machineName = Environment.MachineName;
+            viewModel.MaquinaNome = (machineName).ToString();
 
             //View
             return View(viewModel);
