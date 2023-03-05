@@ -66,8 +66,21 @@ namespace SysMaster.Controllers {
             }
 
             //Nome da máquina
-            string machineName = Environment.MachineName;
+            var machineName = Environment.MachineName;
             viewModel.MaquinaNome = (machineName).ToString();
+
+            //Endereço fisico da maquina
+            var networkInterfaces = NetworkInterface.GetAllNetworkInterfaces();
+
+            foreach (var networkInterface in networkInterfaces) {
+                // check if network interface is Ethernet and it's operational
+                if (networkInterface.NetworkInterfaceType == NetworkInterfaceType.Ethernet
+                    && networkInterface.OperationalStatus == OperationalStatus.Up) {
+                    var physicalAddress = networkInterface.GetPhysicalAddress();
+                    viewModel.CaminhoFisico = (physicalAddress.ToString());
+                }
+            }
+
 
             //View
             return View(viewModel);

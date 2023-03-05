@@ -11,6 +11,7 @@
         public string DownloadSpeed { get; set; }
         public string UploadSpeed { get; set; }
         public string Webcam { get; set; }
-        public string MaquinaNome { get; set; } 
+        public string MaquinaNome { get; set; }
+        public string CaminhoFisico { get; set; }
     }
 }
