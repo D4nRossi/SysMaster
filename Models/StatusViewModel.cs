@@ -10,5 +10,6 @@
         public string RamMemory { get; set; }
         public string DownloadSpeed { get; set; }
         public string UploadSpeed { get; set; }
+        public string Webcam { get; set; } 
     }
 }

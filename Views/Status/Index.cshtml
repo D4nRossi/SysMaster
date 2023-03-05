@@ -1,38 +1,26 @@
 ﻿@model StatusViewModel
 <div class="container">
-<h1>Syscheck</h1>
+    <h1>Syscheck</h1>
 
-    <h2>Hardware</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">CPU</th>
-                <th scope="col">Nucleos</th>
-                <th scope="col">Sistema Operacional</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>@Model.CpuName</td>
-                <td>@Model.CpuCores</td>
-                <td>@Model.OsName</td>
-            </tr>
-        </tbody>
-    </table>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">RAM Livre</th>
-                <th scope="col">Download</th>
-                <th scope="col">Upload</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>@Model.RamMemory GB</td>
-                <td>@Model.DownloadSpeed Mb/s</td>
-                <td>@Model.UploadSpeed Mb/s</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+    <h4>CPU</h4>
+    <p>@Model.CpuName</p>
+    <br />
+    <h4>Nucleos</h4>
+    <p>@Model.CpuCores</p>
+    <br />
+    <h4>SO</h4>
+    <p>@Model.OsName</p>
+    <br />
+    <h4>RAM livre</h4>
+    <p>@Model.RamMemory GB</p>
+    <br />
+    <h4>Download Speed</h4>
+    <p>@Model.DownloadSpeed Mb/s</p>
+    <br />
+    <h4>Upload Speed</h4>
+    <p>@Model.UploadSpeed Mb/s</p>
+    <br />
+    <h4>Tem Webcam</h4>
+    <p>@Model.Webcam</p>
+                
+

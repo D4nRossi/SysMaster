@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AForge.Video.DirectShow;
+using Microsoft.AspNetCore.Mvc;
 using SysMaster.Models;
 using System.CodeDom.Compiler;
 using System.Diagnostics;
@@ -6,6 +7,9 @@ using System.Management;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
+using System.Device;
+using System.Linq;
+using System;
 
 namespace SysMaster.Controllers {
     public class StatusController : Controller {
@@ -48,8 +52,24 @@ namespace SysMaster.Controllers {
             viewModel.DownloadSpeed = downloadSpeed.ToString("0.00");
             viewModel.UploadSpeed = uploadSpeed.ToString("0.00");
 
+            //Webcam
+            // Obter todas as câmeras disponíveis
+            var cameras = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+
+            if (cameras.Count == 0) {
+                viewModel.Webcam = ("Não foi encontrada nenhuma câmera.");
+            } else {
+                Console.WriteLine("As seguintes câmeras foram encontradas:");
+                foreach (FilterInfo camera in cameras) {
+                    viewModel.Webcam = ("- " + camera.Name);
+                }
+            }
+
+
+            //View
             return View(viewModel);
         }
 
     }
+
 }

@@ -46,9 +46,25 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "AForge.Video.DirectShow": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
             "Microsoft.Extensions.Diagnostics.HealthChecks": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "NativeUsbLib": {
+              "target": "Package",
+              "version": "[1.4.9, )"
+            },
+            "System.Device.Location.Portable": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "System.Diagnostics.PerformanceCounter": {
               "target": "Package",

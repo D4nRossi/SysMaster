@@ -45,3 +45,10 @@ D:\TP\SysMaster\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Diagnostics.Perf
 D:\TP\SysMaster\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\TP\SysMaster\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\TP\SysMaster\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\TP\SysMaster\bin\Debug\net7.0\AForge.dll
+D:\TP\SysMaster\bin\Debug\net7.0\AForge.Video.dll
+D:\TP\SysMaster\bin\Debug\net7.0\AForge.Video.DirectShow.dll
+D:\TP\SysMaster\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\TP\SysMaster\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\TP\SysMaster\bin\Debug\net7.0\NativeUsbLib.dll
+D:\TP\SysMaster\bin\Debug\net7.0\System.Device.Portable.dll
