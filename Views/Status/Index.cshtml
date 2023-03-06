@@ -1,34 +1,35 @@
 ﻿@model StatusViewModel
 <div class="container">
     <h1>Syscheck</h1>
+    <div class="row">
+        <div class="col-6">
+            <h4>CPU</h4>
+            <p>@Model.CpuName</p>
+            <h4>Nucleos</h4>
+            <p>@Model.CpuCores</p>
+            <h4>SO</h4>
+            <p>@Model.OsName</p>
+            <h4>RAM livre</h4>
+            <p>@Model.RamMemory GB</p>
+            <h4>RAM instalada</h4>
+            <p>@Model.RamInstalada</p>
+            <h4>Disco Disponivel</h4>
+            <p>@Model.DiscoDisponivel</p>
+        </div>
+        <div class="col-6">
+            <h4>Download Speed</h4>
+            <p>@Model.DownloadSpeed Mb/s</p>
+            <h4>Upload Speed</h4>
+            <p>@Model.UploadSpeed Mb/s</p>
+            <h4>Tem Webcam</h4>
+            <p>@Model.Webcam</p>
+            <h4>Nome da Máquina</h4>
+            <p>@Model.MaquinaNome</p>
+            <h4>Caminho Físico</h4>
+            <p>@Model.CaminhoFisico</p>
+            <h4>Disco Total</h4>
+            <p>@Model.DiscoTotal</p>
+        </div>
+    </div>
 
-    <h4>CPU</h4>
-    <p>@Model.CpuName</p>
-    <br />
-    <h4>Nucleos</h4>
-    <p>@Model.CpuCores</p>
-    <br />
-    <h4>SO</h4>
-    <p>@Model.OsName</p>
-    <br />
-    <h4>RAM livre</h4>
-    <p>@Model.RamMemory GB</p>
-    <br />
-    <h4>Download Speed</h4>
-    <p>@Model.DownloadSpeed Mb/s</p>
-    <br />
-    <h4>Upload Speed</h4>
-    <p>@Model.UploadSpeed Mb/s</p>
-    <br />
-    <h4>Tem Webcam</h4>
-    <p>@Model.Webcam</p>
-    <br />
-    <h4>Nome da Máquina</h4>
-    <p>@Model.MaquinaNome</p>
-    <br />
-    <h4>Caminho Físico</h4>
-    <p>@Model.CaminhoFisico</p>      
-    <br />
-    <h4>RAM instalada</h4>
-    <p>@Model.RamInstalada</p>
 

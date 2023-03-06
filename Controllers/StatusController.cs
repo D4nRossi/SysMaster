@@ -95,6 +95,16 @@ namespace SysMaster.Controllers {
 
             viewModel.RamInstalada = "Memória RAM: " + memoriaRamTotal + " GB";
 
+            //Espaço no disco
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+
+            foreach (DriveInfo c in allDrives) {
+                if (c.IsReady == true) {
+                    viewModel.DiscoDisponivel = ($"  Total available space: {(c.TotalFreeSpace / 1024 / 1024 / 1024)} GB");
+                    viewModel.DiscoTotal = ($"  Total size of drive: {(c.TotalSize / 1024 / 1024 / 1024)} GB");
+                }
+            }
+
             //View
             return View(viewModel);
 
