@@ -13,5 +13,6 @@
         public string Webcam { get; set; }
         public string MaquinaNome { get; set; }
         public string CaminhoFisico { get; set; }
+        public string RamInstalada { get; set; }
     }
 }

@@ -24,7 +24,7 @@
 <p><strong>Mostrar velocidade de upload</strong>: ✔️</p>
 <p><strong>Mostrar nome da máquina</strong>: ✔️</p>
 <p><strong>Mostrar endereço físico</strong>: ✔️</p>
-<p><strong>Mostrar RAM instalada</strong>: Pendente</p>
+<p><strong>Mostrar RAM instalada</strong>: ✔️</p>
 <p><strong>Mostrar espaço livre no disco</strong>: Pendente</p>
 <p><strong>Mostrar se tem webcam</strong>: ✔️</p>
 <p><strong>Mostrar se tem placa de som</strong>: Pendente</p>

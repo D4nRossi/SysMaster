@@ -4,12 +4,8 @@ using SysMaster.Models;
 using System.CodeDom.Compiler;
 using System.Diagnostics;
 using System.Management;
-using System.Net;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
-using System.Device;
-using System.Linq;
-using System;
 
 namespace SysMaster.Controllers {
     public class StatusController : Controller {
@@ -81,11 +77,28 @@ namespace SysMaster.Controllers {
                 }
             }
 
+            //RAM instalada
+            ManagementObjectSearcher s4 = new ManagementObjectSearcher("SELECT Capacity FROM Win32_PhysicalMemory");
+
+            string resp = "0";
+            double memoriaRam = 0;
+
+            //Somando as mémorias
+            foreach (ManagementObject mo in s4.Get()) {
+                resp = Convert.ToString(mo["Capacity"]);
+                memoriaRam += Convert.ToDouble(resp);
+            }
+
+            //Dividi 3 vezes por 1024 para pegar em gigas
+            double memoriaRamTotal = 0;
+            memoriaRamTotal = memoriaRam / 1024 / 1024 / 1024;
+
+            viewModel.RamInstalada = "Memória RAM: " + memoriaRamTotal + " GB";
 
             //View
             return View(viewModel);
-        }
 
+        }
     }
 
 }
