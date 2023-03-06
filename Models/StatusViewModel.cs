@@ -16,5 +16,6 @@
         public string RamInstalada { get; set; }
         public string DiscoDisponivel { get; set; }
         public string DiscoTotal { get; set; }
+        public string TemSom { get; set; }
     }
 }

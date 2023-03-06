@@ -4,6 +4,7 @@ using SysMaster.Models;
 using System.CodeDom.Compiler;
 using System.Diagnostics;
 using System.Management;
+using System.Media;
 using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
 
@@ -103,6 +104,17 @@ namespace SysMaster.Controllers {
                     viewModel.DiscoDisponivel = ($"  Total available space: {(c.TotalFreeSpace / 1024 / 1024 / 1024)} GB");
                     viewModel.DiscoTotal = ($"  Total size of drive: {(c.TotalSize / 1024 / 1024 / 1024)} GB");
                 }
+            }
+
+            //Verificar som
+            SoundPlayer player = new SoundPlayer();
+            try {
+                player.SoundLocation = @"C:\Windows\Media\chimes.wav";
+                player.Load();
+                player.Play();
+                viewModel.TemSom = ("OK");
+            } catch (Exception ex) {
+                viewModel.TemSom = ("Dipositivo sem saída de som: " + ex.Message);
             }
 
             //View

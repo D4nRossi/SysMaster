@@ -27,7 +27,7 @@
 <p><strong>Mostrar RAM instalada</strong>: ✔️</p>
 <p><strong>Mostrar espaço livre no disco</strong>: ✔️</p>
 <p><strong>Mostrar se tem webcam</strong>: ✔️</p>
-<p><strong>Mostrar se tem placa de som</strong>: Pendente</p>
+<p><strong>Mostrar se tem placa de som</strong>: ✔️</p>
 <p><strong>Criar form para mandar os dados da pessoa e salvar no BD</strong>: Pendente</p>
 
 ### Desenvolvido por Daniel Rossi de Amorim &copy;
